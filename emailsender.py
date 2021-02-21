@@ -67,13 +67,13 @@ def main():
         # setup the parameters of the message
         msg['From']=MY_ADDRESS
         msg['To']=mail
-        msg['Subject']="2021 Summer Internship"
+        msg['Subject']="Subject of the Mail"
         
         # add in the message body
         msg.attach(MIMEText(message, 'plain'))
     
-        pdf = MIMEApplication(open("ZeynepDerbentResume.pdf", 'rb').read())
-        pdf.add_header('Content-Disposition', 'attachment', filename= "ZeynepDerbentResume.pdf")
+        pdf = MIMEApplication(open("filename.pdf", 'rb').read())
+        pdf.add_header('Content-Disposition', 'attachment', filename= "filename.pdf")
         msg.attach(pdf)
         
         # send the message via the server set up earlier.
