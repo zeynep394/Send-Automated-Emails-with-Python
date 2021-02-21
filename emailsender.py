@@ -9,8 +9,8 @@ from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.application import MIMEApplication
 
-MY_ADDRESS = 'zeynepderbent@gmail.com'
-PASSWORD = 'derbent123'
+MY_ADDRESS = 'mail@mail.com'
+PASSWORD = 'password'
 
 def get_info(filename):
     contact_list=[]
